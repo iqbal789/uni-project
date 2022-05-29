@@ -17,6 +17,7 @@ public class home extends AppCompatActivity {
         Button buy = findViewById(R.id.buy);
         Button rent = findViewById(R.id.rent);
         Button build = findViewById(R.id.build);
+        Button signin = findViewById(R.id.homesignin);
 
         buy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +37,12 @@ public class home extends AppCompatActivity {
                 openbuild_page();
             }
         });
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                opensignin_page();
+            }
+        });
     }
     public void openbuy_page(){
         Intent myIntent = new Intent(home.this, buy_page.class);
@@ -47,6 +54,10 @@ public class home extends AppCompatActivity {
     }
     public void openbuild_page(){
         Intent myIntent = new Intent(home.this, build_page.class);
+        startActivity(myIntent);
+    }
+    public void opensignin_page(){
+        Intent myIntent = new Intent(home.this, SignIn.class);
         startActivity(myIntent);
     }
 

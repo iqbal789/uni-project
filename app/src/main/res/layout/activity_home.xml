@@ -71,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/rent" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/homesignin"
         android:layout_width="333dp"
         android:layout_height="56dp"
         android:layout_marginStart="40dp"
@@ -95,15 +95,15 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="410dp"
-        android:layout_height="27dp"
+        android:layout_height="32dp"
         android:layout_marginTop="36dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="@+id/homesignin"
         app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/button7">
+        app:layout_constraintStart_toStartOf="@+id/homesignin"
+        app:layout_constraintTop_toBottomOf="@+id/homesignin">
 
         <TextView
             android:layout_width="wrap_content"
