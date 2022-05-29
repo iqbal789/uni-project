@@ -31,7 +31,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="14dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/rent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,8 +41,7 @@
         android:id="@+id/buy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginStart="32dp"
         android:background="@drawable/buy"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView9" />
@@ -52,7 +50,7 @@
         android:id="@+id/invest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="48dp"
         android:background="@drawable/invest"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,10 +72,10 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="337dp"
-        android:layout_height="55dp"
+        android:layout_width="333dp"
+        android:layout_height="56dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/signin"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,14 +94,14 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_width="410dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="36dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/button7"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="@+id/button7"
         app:layout_constraintTop_toBottomOf="@+id/button7">
 
@@ -121,7 +119,6 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
