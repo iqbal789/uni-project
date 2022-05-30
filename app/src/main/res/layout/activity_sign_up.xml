@@ -156,7 +156,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="18dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/signup"
         app:layout_constraintEnd_toEndOf="parent"
@@ -167,7 +167,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:textAlignment="center"
@@ -182,13 +182,17 @@
             android:textColor="#858181"
             android:textSize="18sp" />
 
-        <TextView
+        <Button
+            android:id="@+id/register_signin"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
             android:text="Sign In"
+            android:textAllCaps="false"
             android:textColor="#276386"
             android:textSize="18sp"
             android:textStyle="bold" />
+
     </LinearLayout>
 
 
