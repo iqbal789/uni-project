@@ -20,7 +20,7 @@
         android:id="@+id/UserFirstname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="32dp"
         android:text="First Name"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -32,9 +32,9 @@
         android:id="@+id/Fname"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="Enter Your First Name"
         android:inputType="textPersonName"
@@ -76,18 +76,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/signupdesigntop" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="333dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="40dp"
-        android:background="@drawable/signin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Passwordd" />
 
     <TextView
         android:id="@+id/UserPhoneno"
@@ -163,29 +151,43 @@
         app:layout_constraintStart_toStartOf="@+id/email"
         app:layout_constraintTop_toBottomOf="@+id/Userpassword"/>
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Passwordd" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="410dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button4">
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Already have an account?"
-            android:textColor="#858181" />
+            android:textColor="#858181"
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign In"
             android:textColor="#276386"
+            android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
 

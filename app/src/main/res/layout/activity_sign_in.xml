@@ -42,8 +42,8 @@
 
     <EditText
         android:id="@+id/UserName"
-        android:layout_width="319dp"
-        android:layout_height="44dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="36dp"
@@ -68,18 +68,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/UserName"
         app:layout_constraintTop_toBottomOf="@+id/Password" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="333dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="40dp"
-        android:background="@drawable/signup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UserPassword" />
 
     <TextView
         android:id="@+id/Password"
@@ -107,15 +95,26 @@
         app:layout_constraintEnd_toEndOf="@+id/UserName"
         app:layout_constraintTop_toBottomOf="@+id/UserName" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/signin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserPassword" />
+
     <LinearLayout
-        android:layout_width="410dp"
-        android:layout_height="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/button">
 
@@ -123,13 +122,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Don't have an account?"
-            android:textColor="#858181" />
+            android:textColor="#858181"
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign Up"
             android:textColor="#276386"
+            android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
 
