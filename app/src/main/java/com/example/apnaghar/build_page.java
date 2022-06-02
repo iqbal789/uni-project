@@ -22,6 +22,7 @@ public class build_page extends AppCompatActivity {
             public void onClick(View view) {
                 Intent myIntent = new Intent(build_page.this, home.class);
                 startActivity(myIntent);
+                finish();
             }
         });
     }
