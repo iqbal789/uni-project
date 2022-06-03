@@ -56,22 +56,27 @@ public class home extends AppCompatActivity {
     public void openbuy_page(){
         Intent myIntent = new Intent(home.this, buy_page.class);
         startActivity(myIntent);
+        finish();
     }
     public void openrent_page(){
         Intent myIntent = new Intent(home.this, rent_page.class);
         startActivity(myIntent);
+        finish();
     }
     public void openbuild_page(){
         Intent myIntent = new Intent(home.this, build_page.class);
         startActivity(myIntent);
+        finish();
     }
     public void opensignin_page(){
         Intent myIntent = new Intent(home.this, SignIn.class);
         startActivity(myIntent);
+        finish();
     }
     public void opensignup_page(){
         Intent myIntent = new Intent(home.this, SignUp.class);
         startActivity(myIntent);
+        finish();
     }
 
 }

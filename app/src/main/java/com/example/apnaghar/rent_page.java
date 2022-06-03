@@ -22,6 +22,7 @@ public class rent_page extends AppCompatActivity {
             public void onClick(View view) {
                 Intent myIntent = new Intent(rent_page.this, home.class);
                 startActivity(myIntent);
+                finish();
             }
         });
     }

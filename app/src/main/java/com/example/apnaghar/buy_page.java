@@ -22,6 +22,7 @@ public class buy_page extends AppCompatActivity {
             public void onClick(View view) {
                 Intent myIntent = new Intent(buy_page.this,home.class);
                 startActivity(myIntent);
+                finish();
             }
         });
     }
