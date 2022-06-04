@@ -1,125 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".home">
 
-    <Button
-        android:id="@+id/sidepanel"
-        android:layout_width="28dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginBottom="175dp"
-        android:background="@drawable/sidepanel"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
-        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="471dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="539dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9"
-        app:srcCompat="@drawable/bottom" />
-
-    <Button
-        android:id="@+id/rent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="38dp"
-        android:background="@drawable/rent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
-
-    <Button
-        android:id="@+id/buy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/buy"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
-
-    <Button
-        android:id="@+id/invest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/invest"
-        app:layout_constraintEnd_toEndOf="@+id/buy"
-        app:layout_constraintStart_toStartOf="@+id/buy"
-        app:layout_constraintTop_toBottomOf="@+id/buy" />
-
-    <Button
-        android:id="@+id/build"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/build"
-        android:textColor="@android:color/black"
-        app:layout_constraintEnd_toEndOf="@+id/rent"
-        app:layout_constraintStart_toStartOf="@+id/rent"
-        app:layout_constraintTop_toBottomOf="@+id/rent" />
-
-    <Button
-        android:id="@+id/homesignin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/signin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/build" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="476dp"
-        android:layout_height="334dp"
-        android:layout_marginBottom="608dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/home_top" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/homesignin"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="@+id/homesignin"
-        app:layout_constraintTop_toBottomOf="@+id/homesignin">
-
-        <TextView
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="471dp"
             android:layout_height="wrap_content"
-            android:text="Don't have an account?"
-            android:textColor="#858181"
-            android:textSize="18sp" />
+            android:layout_marginTop="539dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:srcCompat="@drawable/bottom" />
 
         <Button
-            android:id="@+id/home_signup"
+            android:id="@+id/rent"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:text="Sign Up"
-            android:textAllCaps="false"
-            android:textColor="#276386"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="38dp"
+            android:background="@drawable/rent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/invest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/invest"
+            app:layout_constraintEnd_toEndOf="@+id/buy"
+            app:layout_constraintStart_toStartOf="@+id/buy"
+            app:layout_constraintTop_toBottomOf="@+id/buy" />
+
+        <Button
+            android:id="@+id/build"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/build"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/rent"
+            app:layout_constraintStart_toStartOf="@+id/rent"
+            app:layout_constraintTop_toBottomOf="@+id/rent" />
+
+        <Button
+            android:id="@+id/homesignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/signin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/build" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="476dp"
+            android:layout_height="334dp"
+            android:layout_marginBottom="608dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/home_top" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/homesignin"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/homesignin"
+            app:layout_constraintTop_toBottomOf="@+id/homesignin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:textColor="#858181"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/home_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#276386"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

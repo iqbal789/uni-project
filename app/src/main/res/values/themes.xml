@@ -17,4 +17,13 @@
         <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
     </style>
 
+    <style name="Theme.ApnaGhar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ApnaGhar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ApnaGhar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
