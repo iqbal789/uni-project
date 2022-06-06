@@ -29,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <EditText
-        android:id="@+id/Fname"
+        android:id="@+id/inputname"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -52,18 +52,18 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/UserFirstname"
-        app:layout_constraintTop_toBottomOf="@+id/Fname" />
+        app:layout_constraintTop_toBottomOf="@+id/inputname" />
 
     <EditText
-        android:id="@+id/Lastname"
+        android:id="@+id/inputemail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="Enter Your E-mail"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/Fname"
-        app:layout_constraintStart_toStartOf="@+id/Fname"
+        app:layout_constraintEnd_toEndOf="@+id/inputname"
+        app:layout_constraintStart_toStartOf="@+id/inputname"
         app:layout_constraintTop_toBottomOf="@+id/UserLastname" />
 
     <ImageView
@@ -87,18 +87,18 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/UserLastname"
-        app:layout_constraintTop_toBottomOf="@+id/Lastname" />
+        app:layout_constraintTop_toBottomOf="@+id/inputemail" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/inputpassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="**********"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/Lastname"
-        app:layout_constraintStart_toStartOf="@+id/Lastname"
+        app:layout_constraintEnd_toEndOf="@+id/inputemail"
+        app:layout_constraintStart_toStartOf="@+id/inputemail"
         app:layout_constraintTop_toBottomOf="@+id/UserPhoneno" />
 
     <TextView
@@ -111,22 +111,22 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/UserPhoneno"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/inputpassword" />
 
     <EditText
-        android:id="@+id/confirmpassword"
+        android:id="@+id/inputconfirmpassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="**********"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/inputpassword"
+        app:layout_constraintStart_toStartOf="@+id/inputpassword"
         app:layout_constraintTop_toBottomOf="@+id/Useremail" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -135,7 +135,7 @@
         android:background="@drawable/signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirmpassword" />
+        app:layout_constraintTop_toBottomOf="@+id/inputconfirmpassword" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -145,9 +145,9 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2">
+        app:layout_constraintEnd_toEndOf="@+id/btnSignUp"
+        app:layout_constraintStart_toStartOf="@+id/btnSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp">
 
         <TextView
             android:layout_width="wrap_content"

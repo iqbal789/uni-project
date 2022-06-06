@@ -11,6 +11,9 @@
         <entry key="..\:/ApnaGhar/ApnaGhar/app/src/main/res/layout/activity_sign_in.xml" value="0.33" />
         <entry key="..\:/ApnaGhar/ApnaGhar/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
         <entry key="..\:/ApnaGhar/ApnaGhar/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.187" />
+        <entry key="..\:/ApnaGhar/app/src/main/res/layout/activity_home.xml" value="0.13881748071979436" />
+        <entry key="..\:/ApnaGhar/app/src/main/res/layout/activity_sign_in.xml" value="0.13881748071979436" />
+        <entry key="..\:/ApnaGhar/app/src/main/res/layout/activity_sign_up.xml" value="0.13881748071979436" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/ApnaGhar/app/src/main/res/drawable/_bg__logo_shape.xml" value="0.1805" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/ApnaGhar/app/src/main/res/layout/activity_build_page.xml" value="0.21" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/ApnaGhar/app/src/main/res/layout/activity_buy_page.xml" value="0.13881748071979436" />
@@ -18,11 +21,13 @@
         <entry key="..\:/Users/PC/AndroidStudioProjects/ApnaGhar/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/ApnaGhar/app/src/main/res/layout/activity_sign_in.xml" value="0.22" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/ApnaGhar/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ApnaGhar/app/src/main/res/layout/content_side_panel.xml" value="0.13881748071979436" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/ApnaGhar/app/src/main/res/layout/dropdown_item.xml" value="0.21" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/ApnaGhar/app/src/main/res/layout/list_item.xml" value="0.15715579710144928" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ApnaGhar/app/src/main/res/layout/nav_header_side_panel.xml" value="0.33" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ApnaGhar/app/src/main/res/menu/activity_main_drawer.xml" value="0.2805194805194805" />
+        <entry key="..\:/Users/waleed/AndroidStudioProjects/uni-project/app/src/main/res/layout/activity_home.xml" value="0.18" />
+        <entry key="..\:/Users/waleed/AndroidStudioProjects/uni-project/app/src/main/res/layout/activity_home2.xml" value="0.1" />
+        <entry key="..\:/Users/waleed/AndroidStudioProjects/uni-project/app/src/main/res/layout/activity_sign_in.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/waleed/AndroidStudioProjects/uni-project/app/src/main/res/layout/activity_sign_up.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/waleed/AndroidStudioProjects/uni-project/app/src/main/res/layout/nav_header_side_panel.xml" value="0.1" />
         <entry key="..\:/Users/waleed/ApnaGhar/app/src/main/res/drawable/input_bg.xml" value="0.2105" />
         <entry key="..\:/Users/waleed/ApnaGhar/app/src/main/res/drawable/input_bgm.xml" value="0.1635" />
         <entry key="..\:/Users/waleed/ApnaGhar/app/src/main/res/layout/activity_registerpage.xml" value="0.25" />
