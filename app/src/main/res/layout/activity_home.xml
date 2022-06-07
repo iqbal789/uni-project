@@ -20,58 +20,75 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView9"
             app:srcCompat="@drawable/bottom" />
 
-        <Button
-            android:id="@+id/rent"
+        <LinearLayout
+            android:id="@+id/linearLayout4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="38dp"
-            android:background="@drawable/rent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
-
-        <Button
-            android:id="@+id/buy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="38dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/buy"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView9">
 
-        <Button
-            android:id="@+id/invest"
+            <Button
+                android:id="@+id/buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/buy" />
+
+            <Button
+                android:id="@+id/rent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/rent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:background="@drawable/invest"
-            app:layout_constraintEnd_toEndOf="@+id/buy"
-            app:layout_constraintStart_toStartOf="@+id/buy"
-            app:layout_constraintTop_toBottomOf="@+id/buy" />
+            android:layout_marginTop="36dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
-        <Button
-            android:id="@+id/build"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:background="@drawable/build"
-            android:textColor="@android:color/black"
-            app:layout_constraintEnd_toEndOf="@+id/rent"
-            app:layout_constraintStart_toStartOf="@+id/rent"
-            app:layout_constraintTop_toBottomOf="@+id/rent" />
+            <Button
+                android:id="@+id/invest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/invest" />
+
+            <Button
+                android:id="@+id/build"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/build"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/homesignin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="64dp"
+            android:layout_marginTop="48dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/signin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/build" />
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
         <ImageView
             android:id="@+id/imageView9"
@@ -116,6 +133,7 @@
                 android:textStyle="bold" />
 
         </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
