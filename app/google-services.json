@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "112026887422",
+    "firebase_url": "https://apnaghar-f69d9-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "apnaghar-f69d9",
     "storage_bucket": "apnaghar-f69d9.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "112026887422-t4pv1u548guil7h4uq3v0k0uehaps9bm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.apnaghar",
+            "certificate_hash": "26f4d2de58661ed62357ec0687458b7d66164ef1"
+          }
+        },
         {
           "client_id": "112026887422-diki2694n7bn4keiv9ko31tdhh7n9adu.apps.googleusercontent.com",
           "client_type": 3

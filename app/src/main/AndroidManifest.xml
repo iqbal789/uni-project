@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.apnaghar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,44 +13,55 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApnaGhar">
         <activity
-            android:name=".side_panel"
-            android:exported="false"
-            android:label="@string/title_activity_side_panel"
-            android:theme="@style/Theme.ApnaGhar.NoActionBar" />
+            android:name=".AboutUs"
+            android:exported="false" />
         <activity
-            android:name=".build_page"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".ContactUs"
+            android:exported="false" />
         <activity
-            android:name=".rent_page"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".InvestPage"
+            android:exported="false" />
         <activity
-            android:name=".buy_page"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".facebook_signin"
+            android:exported="false" />
         <activity
-            android:name=".home"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".GoogleSigninActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuildPage"
+            android:exported="false" />
+        <activity
+            android:name=".RentPage"
+            android:exported="false" />
+        <activity
+            android:name=".BuyPage"
+            android:exported="false" />
+        <activity
+            android:name=".HomePage"
+            android:exported="false" />
         <activity
             android:name=".SignUp"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:exported="false" />
         <activity
             android:name=".SignIn"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:name=".LogoPage"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
     </application>
 
 </manifest>

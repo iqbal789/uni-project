@@ -21,14 +21,13 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class SignUp extends AppCompatActivity {
 
-    EditText inputemail,inputpassword,inputconfirmpassword;
-    Button btnSignUp;
+    EditText inputemail,inputpassword,inputconfirmpassword,inputname;
+    Button btnSignUp, signin;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
 
     FirebaseAuth mAuth;
     FirebaseUser mUser;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +35,7 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        Button signin = findViewById(R.id.register_signin);
+        signin = (Button) findViewById(R.id.register_signin);
 
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,10 +43,11 @@ public class SignUp extends AppCompatActivity {
                 opensignin_page();
             }
         });
-        inputemail = findViewById(R.id.inputemail);
-        inputpassword =findViewById(R.id.inputpassword);
-        inputconfirmpassword = findViewById(R.id.inputconfirmpassword);
-        btnSignUp = findViewById(R.id.btnSignUp);
+        inputname = (EditText) findViewById(R.id.inputname);
+        inputemail = (EditText) findViewById(R.id.inputemail);
+        inputpassword = (EditText) findViewById(R.id.inputpassword);
+        inputconfirmpassword = (EditText) findViewById(R.id.inputconfirmpassword);
+        btnSignUp = (Button) findViewById(R.id.btnSignUp);
         progressDialog = new ProgressDialog(this);
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
@@ -60,11 +60,24 @@ public class SignUp extends AppCompatActivity {
         });
     }
 
+    private void opensignin_page() {
+        Intent intent = new Intent(SignUp.this,SignIn.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
+        finish();
+    }
+
     private void PerforAuth() {
+        String name=inputname.getText().toString().trim();
         String email=inputemail.getText().toString();
         String password=inputpassword.getText().toString();
         String confirmpassword=inputconfirmpassword.getText().toString();
 
+        if(name.isEmpty()){
+            inputname.setError("Name is required");
+            inputname.requestFocus();
+            return;
+        }
         if(!email.matches(emailPattern))
         {
             inputemail.setError("Enter Correct Email");
@@ -100,14 +113,10 @@ public class SignUp extends AppCompatActivity {
     }
 
     private void sendUserToNextAcitivity() {
-        Intent intent = new Intent(SignUp.this, home.class);
+        Intent intent = new Intent(SignUp.this, SignIn.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
-    }
-
-    public void opensignin_page(){
-        Intent myIntent = new Intent(SignUp.this, SignIn.class);
-        startActivity(myIntent);
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
         finish();
     }
 
